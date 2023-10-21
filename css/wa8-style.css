@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 193, 131);
+    
+    
+}
+h1 {
+    font-family: 'Zapfino', 'Lucida Grande';
+}
+
+h1:hover {
+    color: rgb(136, 8, 8);
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(183, 16, 49);
+    font-family: 'Didot';
+    padding: 10px;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(250, 237, 89);
+
+    transition: background-color;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    
+}
+
+nav a:hover {
+    background-color: rgb(237, 45, 83);
+    
+}
+
+img{
+    width:30vw;
+    height: 40vh;
+}
+
+#red-ball{
+    background-color: rgb(237, 45, 83);
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
