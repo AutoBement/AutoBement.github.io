@@ -1,0 +1,196 @@
+
+html, body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color:rgb(202, 217, 250);
+}
+html {
+    font-size: 10px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(202, 217, 250);
+    width: 100vw;
+    height:fit-content;
+    padding: 0.5em;
+
+}
+    
+header h1 {
+    font-size: 35px;
+}
+
+.intro {
+    background-color: rgb(26, 35, 126);
+    color:white;
+    width: 100vw;
+    height: fit-content;
+    padding: 0.5em
+}
+    
+.intro p {
+    font-family: 'Didot';
+    font-size: 20px;
+    
+}
+
+.info {
+    background-image: url(musicnotes.jpeg);
+    background-size: 100vw;
+    font-family: 'Didot';
+    padding: 5vw ;
+    margin:4vw;
+    border: black 5px solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.info h1 {
+    font-size: 45px;
+}
+
+.info h3 {
+    font-size: 30px;
+}
+
+.info h1 h3 {
+    align-items: center;
+}
+
+#show1, 
+#show2,
+#show3,
+#show4,
+#show5,
+#show6,
+#show7,
+#show8,
+#show9 {
+    font-family: 'Didot';
+    width:70em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    margin:3vw; 
+}
+
+#show1 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+
+#show2 {
+    background-color: rgb(202, 217, 250);
+    height:37em;
+    
+}
+#show3 {
+    background-color: rgb(202, 217, 250);
+    height:37em;
+}
+#show4 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+#show5 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+#show6 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+#show7 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+#show8 {
+    background-color: rgb(202, 217, 250);
+    height:35em;
+    
+}
+#show9 {
+    background-color: rgb(202, 217, 250);
+    height:30em;
+}
+
+.button {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(26, 35, 126);
+    color:white;
+    font-size:30px;
+}
+
+.button a {
+    color:white;
+}
+
+.button a:hover {
+    color:rgb(202, 217, 250);
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(202, 217, 250);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-popup {
+    position: absolute;
+    background: white;
+    width: 400px;
+    height: 75vh;
+    padding: 1em 2em;
+    overflow-y: scroll !important;
+    border: black 5px solid;
+} 
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.close-popup {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.content-popup p {
+    font-size: 25px;
+}
+
+.popup-close a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:400px) {
+    .show1, 
+    .show2,
+    .show3,
+    .show4,
+    .show5,
+    .show6,
+    .show7,
+    .show8,
+    .show9 {
+        display:flex;
+        flex-direction:column;
+    }
+
+}
