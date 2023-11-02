@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ica10.css">
+    <title>In Class Assignment 10</title>
+</head>
+<body>
+    <h1>Look At These Kittens!</h1>
+    <img id="kittens" src="Kittens.jpeg" alt="Two kittens">
+
+    <button>Click to see previous photo</button>
+
+    <script>
+        const kittens = document.getElementById("kittens")
+        const text = document.querySelector("h1")
+        const kittens2 = document.querySelector("button")
+
+        kittens.addEventListener('mouseover', kittenPhoto);
+        kittens2.addEventListener('click',textChange)
+        
+
+        function kittenPhoto() {
+            document.getElementById("kittens").src = "kittens-basket.jpg";
+            text.textContent = 'More Kittens!';
+        }
+        function textChange(){
+            document.getElementById("kittens").src="Kittens.jpeg";
+            text.textContent='Look At These Kittens!'
+        }
+    </script>
+    
+</body>
+</html>
