@@ -33,6 +33,7 @@ for (let i = 0; i < 5; i++) {
       displayedImage.src = newImage.src;
     });
 }  
+
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () =>{
     const current = btn.getAttribute("class");

@@ -41,7 +41,7 @@ button {
   font-family: 'Lucida Grande';
   font-size: 12px;
   background: rgb(158, 110, 201);
-  border: 1px solid rgb(36, 13, 127);
+  border: 2px solid rgb(36, 13, 127);
   position: absolute;
   cursor: pointer;
   top: 2px;
