@@ -9,8 +9,8 @@ const images = [
     "./images/pic1.JPG",
     "./images/pic2.JPG",
     "./images/pic3.jpeg",
-    "./images/pic4.jpg",
-    "./images/pic5.jpg",
+    "./images/pic4.JPG",
+    "./images/pic5.JPG",
 ];
 
 /* Declaring the alternative text for each image file */
