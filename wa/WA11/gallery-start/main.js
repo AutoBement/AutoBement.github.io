@@ -5,6 +5,7 @@ const btn = document.querySelector("button");
 const overlay = document.querySelector(".overlay");
 
 /* Declaring the array of image filenames */
+
 const images = [
     "./images/pic1.jpg",
     "./images/pic2.jpg",
@@ -14,6 +15,7 @@ const images = [
 ];
 
 /* Declaring the alternative text for each image file */
+
 const alts = [
     "A green pine bush with a small red leaf on it", 
     "A tree with orange leaves with a red bush underneath it during sunset",
@@ -23,6 +25,7 @@ const alts = [
 ];
 
 /* Looping through images */
+
 for (let i = 0; i < 5; i++) {
     const newImage = document.createElement("img");
     newImage.setAttribute("src", images[i]);
@@ -35,6 +38,7 @@ for (let i = 0; i < 5; i++) {
 }  
 
 /* Wiring up the Darken/Lighten button */
+
 btn.addEventListener('click', () =>{
     const current = btn.getAttribute("class");
     if (current === "dark"){
