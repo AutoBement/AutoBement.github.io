@@ -8,7 +8,7 @@ async function getQuote() {
     try {
         const response = await fetch(endpoint);
         if (!response.ok) {
-            throw Error(response.statusTexxt);
+            throw Error(response.statusText);
         }
         const json = await response.json();
         //console.log(json);
