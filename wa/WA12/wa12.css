@@ -18,7 +18,7 @@ html {
   
   .app {
     position:absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
@@ -34,14 +34,19 @@ html {
   }
 
   header {
-    position: sticky;
     width: 100%;
     font-size: 30px;
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid black;
   }
   
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid black;
+  }
   .quotes {
     padding: 20px 50px;
     min-height: 150px;
