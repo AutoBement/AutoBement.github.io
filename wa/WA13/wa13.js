@@ -68,37 +68,40 @@ console.log(company2);
 // Problem 3
 
 let company3 = {
-    "employeeList":[
-        {
-            "firstName": "Sam",
-            "department": "Tech",
-            "designation": "Manager",
-            "salary": 40000,
-            "raiseEligible": true
-        },
-        {
-            "firstName": "Mary",
-            "department": "Finance",
-            "designation": "Trainee",
-            "salary": 18500,
-            "raiseEligible": true
-        },
-        {
-            "firstName": "Bill",
+    companyName: "Tech Stars",
+    website:"www.techstars.site",
+     "employeeList":[
+         {
+             "firstName": "Sam",
+             "department": "Tech",
+             "designation": "Manager",
+             "salary": 40000,
+             "raiseEligible": true
+         },
+         {
+             "firstName": "Mary",
+             "department": "Finance",
+             "designation": "Trainee",
+             "salary": 18500,
+             "raiseEligible": true
+         },
+         {
+             "firstName": "Bill",
+             "department": "HR",
+             "designation": "Executive",
+             "salary": 21200,
+             "raiseEligible": false
+         },
+         {
+            "firstName": "Anna",
             "department": "HR",
             "designation": "Executive",
             "salary": 21200,
             "raiseEligible": false
         },
-        {
-            "firstName": "Anna",
-            "department": "Tech",
-            "designation": "Executive",
-            "salary": 25600,
-            "raiseEligible": false
-        }
-    ]
-}
+
+     ]
+ }
 
 console.log("Problem 3:");
 console.log(company3);
@@ -125,15 +128,16 @@ console.log(company3);
 
 // Problem 6
 
-let arr = ['Anna','Sam'];
-for(let i = 0; i< company3.employeeList.length;i++){
-    for(let j = 0; j <arr.length; j++){
-        if(company3.employeeList[i]['firstName']==arr[j]){
-            company3.employeeList[i]['wfh'] = true;
-        }else{
-            company3.employeeList[i]['wfh'] = false;
-        }
+let wfhNames = ["Anna", "Sam"];
+for (var i = 0; i < company3.employeeList.length; i++) {
+  for (var n = 0; n < wfhNames.length; n++) {
+    if (company3.employeeList[i].firstName === wfhNames[n]) {
+        company3.employeeList[i].wfh = true;
+    } else if (company3.employeeList[i].wfh != true) {
+      // Added this because I think it was overwriting one of the names while the other got set to true
+      company3.employeeList[i].wfh = false;
     }
+  }
 }
 
 console.log("Problem 6:");
